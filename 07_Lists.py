@@ -208,5 +208,17 @@ newlist = [x.upper() for x in fruits]
 print(newlist)
 print("--------------------\n")
 
-# Set all the values in the List to "Hello"abs
-newlist = ['Hello' for x in fruits]
+# Set all the values in the List to "Hello"
+thislist = ['Hello' for x in fruits]
+
+# Return "Orange" instead of "Banana"
+thislist = ["Apple", "JUice", "is", "great"]
+newlist = [x if x != "banana" else "orange" for x in thislist]
+print(newlist)
+print("--------------------\n")     
+
+# Sort List Alphanumerically
+thislist = ["a1e", "ad", "ac", "ab", "a"]
+thislist.sort()
+print(thislist)
+print("--------------------\n")
