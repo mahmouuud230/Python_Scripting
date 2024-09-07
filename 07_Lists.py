@@ -171,3 +171,42 @@ print("--------------------\n")
 # Looping Using List Comprehension
 [print(x) for x in thislist]
 print("--------------------\n")
+
+print("------------------------------------------------------------------------\n")
+
+# List Comprehension
+
+
+# Without List Comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newList = []
+
+for x in fruits:
+    if "a" in x:
+        newList.append(x)
+print(newList)
+print("--------------------\n") 
+
+# With List Comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newList = [x for x in fruits if 'a' in x]
+print(newList)
+print("--------------------\n") 
+
+# Iterable
+newlist = [x for x in range(10)]
+print(newlist)
+print("--------------------\n") 
+
+# Iterable with a condition
+newlist = [x for x in range(10) if x < 5]
+print(newlist)
+print("--------------------\n")
+
+# Iterable with an expression
+newlist = [x.upper() for x in fruits]
+print(newlist)
+print("--------------------\n")
+
+# Set all the values in the List to "Hello"abs
+newlist = ['Hello' for x in fruits]
