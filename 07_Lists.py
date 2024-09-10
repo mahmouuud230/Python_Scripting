@@ -217,8 +217,58 @@ newlist = [x if x != "banana" else "orange" for x in thislist]
 print(newlist)
 print("--------------------\n")     
 
+print("------------------------------------------------------------------------\n")
+
 # Sort List Alphanumerically
 thislist = ["a1e", "ad", "ac", "ab", "a"]
+thislist.sort(),
+print(thislist)
+print("--------------------\n")
+
+# Sort List Numerically
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+print("--------------------\n")  
+
+# Sort Descending
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse=True)
+print(thislist)
+print("--------------------\n") 
+
+# Sort Descending Numerically
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse=True)
+print(thislist)
+print("--------------------\n")
+
+# Customize Sort Function
+def myFun(n):
+    return abs(n - 50)
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key=myFun)
+print(thislist)
+print("--------------------\n")
+
+
+# Case Insensitive Sort // sort() method is case sensitive by default
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.sort()
 print(thislist)
 print("--------------------\n")
+
+# Case Insensitive Sort
+thislist = ["A", "a", "d", "D", "B", "b"]
+thislist.sort(key=str.lower)
+print(thislist) 
+print("--------------------\n")
+
+# Reverse List Order
+thislist = ["One","Two", "Three",]
+thislist.reverse()
+print(thislist)
+print("--------------------\n") 
+
+print("------------------------------------------------------------------------\n")
+
