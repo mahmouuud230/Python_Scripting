@@ -272,3 +272,50 @@ print("--------------------\n")
 
 print("------------------------------------------------------------------------\n")
 
+# Copy List
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+print("--------------------\n")
+
+# Another way to make a copy is to use the built-in method list()
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist
+print(mylist)
+print("--------------------\n")
+
+# Another way to make a copy is to use the built-in method list()
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+print("--------------------\n")
+
+# Use the slice Operator to make a copy
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist[:]
+print(mylist)
+print("--------------------\n")
+
+print("------------------------------------------------------------------------\n")
+
+# Join Two Lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+print("--------------------\n") 
+
+# Append List2 into List1
+
+for x in list2:
+    list1.append(x)
+print(list1)
+print("--------------------\n")
+
+# Use the extend() method to add List2 at the end of List1
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list1.extend(list2)
+print(list1)
+x = len(list1)
+print(x)
