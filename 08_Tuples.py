@@ -71,3 +71,39 @@ print("--------------------\n")
 
 print("------------------------------------------------------------------------\n")
 
+# Update Tuple
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+print("--------------------\n")
+
+# Add Items
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple = tuple(y)
+print(thistuple)
+print("--------------------\n")
+
+# Add tuple to a tuple
+tuple1 = ("a", "b", "c")
+tuple2 = (1, 2, 3)
+tuple1 += tuple2
+print(tuple1)
+print("--------------------\n")
+
+# Remove Items
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+print(thistuple)
+print("--------------------\n")
+
+# Remove Items
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print("--------------------\n")
+
