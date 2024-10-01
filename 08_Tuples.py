@@ -149,9 +149,3 @@ while i < len(thistuple):
 print("--------------------\n") 
 
 print("------------------------------------------------------------------------\n")
-
-fruits = ("apple", "banana", "cherry")
-mytuple = fruits * 2
-
-print(mytuple.index("apple"))
-
